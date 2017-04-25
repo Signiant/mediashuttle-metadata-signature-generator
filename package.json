@@ -1,0 +1,26 @@
+{
+  "name": "signiant-metadata-signature-calculator",
+  "version": "1.0.0",
+  "description": "Sample code to calculate request signatures for Signiant Metadata requests",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://tporter-signiant@github.com/tporter-signiant/signiant-metadata-signature-calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tporter-signiant/signiant-metadata-signature-calculator/issues"
+  },
+  "homepage": "https://github.com/tporter-signiant/signiant-metadata-signature-calculator",
+  "dependencies": {
+    "inquirer": "^3.0.6"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0"
+  }
+}
