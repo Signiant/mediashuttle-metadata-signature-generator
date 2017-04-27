@@ -1,16 +1,22 @@
 {
-  "name": "signiant-metadata-signature-calculator",
+  "name": "mediashuttle-metadata-signature-generator",
   "version": "1.0.0",
-  "description": "Sample code to calculate request signatures for Signiant Metadata requests",
+  "description": "Sample code to generate request signatures for Signiant Media Shuttle Metadata requests",
   "main": "index.js",
   "scripts": {
     "generate": "node index.js"
+  },
+  "engines": {
+    "node": ">=6.9"
   },
   "repository": {
     "type": "git",
     "url": "https://tporter-signiant@github.com/tporter-signiant/signiant-metadata-signature-calculator.git"
   },
-  "keywords": [],
+  "keywords": [
+    "signiant",
+    "mediashuttle"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -18,7 +24,8 @@
   },
   "homepage": "https://github.com/tporter-signiant/signiant-metadata-signature-calculator",
   "dependencies": {
-    "inquirer": "^3.0.6"
+    "inquirer": "^3.0.6",
+    "joi": "^10.4.1"
   },
   "devDependencies": {
     "eslint": "^3.19.0"
