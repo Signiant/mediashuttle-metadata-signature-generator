@@ -1,6 +1,6 @@
-# Media Shuttle Metadata Signature Calculator
+# Media Shuttle Metadata Signature Generator
 
-Sample code to calculate signed request urls for Signiant Media Shuttle Metadata requests.
+Sample code to generate signed request urls for Signiant Media Shuttle Metadata requests.
 
 Usage:
 
