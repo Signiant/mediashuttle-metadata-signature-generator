@@ -2,10 +2,26 @@
 
 Sample code to generate signed request urls for Signiant Media Shuttle Metadata requests.
 
-Usage:
+## Usage
 
-`npm install`
+```sh
+$ npm install
+```
+or
 
-`npm run generate`
+```sh
+$ yarn install
+```
+
+then
+
+```sh
+$ npm run generate
+```
+or
+
+```sh
+$ yarn generate
+```
 
 Follow the prompts and provide the input data needed to generate the signed url.
