@@ -26,8 +26,8 @@ const portalPrefixPrompt = {
     name: 'portalPrefix',
     message: 'What is your Media Shuttle portal URL prefix (i.e. the subdomain name before .mediashuttle.com)?',
     validate: portalPrefix => {
-        const {error} = joi.validate(portalPrefix, joi.string().regex(/^[A-Za-z0-9\-]+$/).lowercase());
-        return error === null ? true : error.message;
+        const {error} = joi.string().regex(/^[A-Za-z0-9\-]+$/).lowercase().validate(portalPrefix);
+        return error === (null || undefined) ? true : error;
     }
 };
 
@@ -36,8 +36,8 @@ const packageIdPrompt = {
     name: 'packageId',
     message: 'What is the Media Shuttle package ID for this request?',
     validate: packageId => {
-        const {error} = joi.validate(packageId, joi.string().alphanum());
-        return error === null ? true : error.message;
+        const {error} = joi.string().alphanum().validate(packageId);
+        return error === (null || undefined) ? true : error.message;
     }
 };
 
@@ -52,8 +52,8 @@ const registrationKey = {
     name: 'registrationKey',
     message: 'What is your Media Shuttle Metadata Registration key?',
     validate: registrationKey => {
-        const {error} = joi.validate(registrationKey, joi.string().uuid());
-        return error === null ? true : error.message;
+        const {error} = joi.string().uuid().validate(registrationKey);
+        return error === (null || undefined) ? true : error.message;
     }
 };
 
